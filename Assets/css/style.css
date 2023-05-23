@@ -4,6 +4,100 @@
     box-sizing: border-box;
 }
 
-header h1{
+body{
+    background-color:#232323;
+    color: #fff;
+}
+
+.parallax-image {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.parallax-image .parallax-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.parallax-image .parallax-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    color: #fff;
+}
+.parallax-image .parallax-overlay p {
+    margin-top: -15px;
+    font-size: 30px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    color: #fff;
+}
+.parallax-image .parallax-overlay a {
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px 30px;
+    border: 2px solid #fff; /* remplacer la variable $text-color */
+    color: #fff; /* remplacer la variable $text-color */
+    transition: 0.3s;
+}
+.parallax-image .parallax-overlay a:hover {
+    border: 2px solid rgb(44, 177, 11); /* remplacer la variable $first-color */
+    background-color: rgba(41, 40, 40, 0.719);
+    color: #fff; /* remplacer la variable $background-color */
+}
+
+.preamble{
+    height: 30vh;
+    /*background-color: #084d72;*/
+}
+
+.preamble h2{
+    font-size: 55px;
+    text-align: center;
+}
+
+.preamble ul li{
+    font-size: 30px;
+    text-align: center;
+}
+
+.story_section{
+    position: relative;
+    top: -  50px;
+
+}
+
+.story_section h2{
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+
+}
+
+.story_section p{
+    width: 80%;
+    text-align: center;
+    margin-left: 160px;
+    font-size: 25px;
+}
+
+.story_section blockquote {
+    color: red;
+}
+
+.conclusion, footer{
+    color: black;
 }
